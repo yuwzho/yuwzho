@@ -18,9 +18,9 @@
         "properties": {
           "containers": [
             {
-              "name": "[variables(‘container1name’)]",
+              "name": "[variables('container1name')]",
               "properties": {
-                "image": "[variables(‘container1image’)]",
+                "image": "[variables('container1image')]",
                 "resources": {
                   "requests": {
                     "cpu": 1,
@@ -35,9 +35,9 @@
               }
             },
             {
-              "name": "[variables(‘container2name’)]",
+              "name": "[variables('container2name')]",
               "properties": {
-                "image": "[variables(‘container2image’)]",
+                "image": "[variables('container2image')]",
                 "resources": {
                   "requests": {
                     "cpu": 1,
@@ -63,7 +63,7 @@
     "outputs": {
       "containerIPv4Address": {
         "type": "string",
-        "value": "[reference(resourceId(‘Microsoft.ContainerInstance/containerGroups/’, ‘myContainerGroup’)).ipAddress.ip]"
+        "value": "[reference(resourceId('Microsoft.ContainerInstance/containerGroups/', 'myContainerGroup')).ipAddress.ip]"
       }
     }
   }
